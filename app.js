@@ -26,7 +26,7 @@ app.use(limiter);
 
 const mongoose = require("mongoose");
 mongoose.set('strictQuery', false);
-const dev_db_url = "mongodb+srv://tylerwschnabel:harry13@cluster0.msrwu4z.mongodb.net/local_library?retryWrites=true&w=majority";
+
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
 
 main().catch(err => console.log(err));
